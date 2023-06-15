@@ -1,24 +1,18 @@
 ﻿# ImgEndpoint
  
 
-Deploying Endpoint in Cloud Run
-To deploy our endpoint in Cloud Run, please follow these steps:
+To deploy our endpoint in Cloud Run, you can follow these few steps:
+ https://github.com/Si-Mun
+1.	Clone our imgendpoint repository. in Index.js 
+2.	change the key.js with your own ServiceAccount in the firebase. Also change Cloud Project ID and Bucket with your own. 
+3.	Then, Upload it in the github Open GCP and use Cloud Run to make a new services. 
+4.	Next, click "Continuously deploy new revisions from a source repository" 
+5.	And click "Set Up With Cloud Build" Choose Github and choose the repository that you've already add the services. 
+6.	Click "Allow unauthenticated invocations" 
+7.	Then Configure the port to 3000 
+8.	Then click create 
+9.	You will be notify if the services is successfull 
+10.	You can change the services in the github, and the cloud run will automatically build it again for you. 
+11.	You can monitoring the change of your services in the Cloud Build.
 
-1.	 Clone the imgendpoint repository from GitHub.
-2.	Open the Index.js file and update the following:
-3.	Replace key.js with your own Service Account key file for Firebase.
-4.	Update the Cloud Project ID and Bucket with your own values.
-5.	Upload the modified repository to GitHub.
-6.	Open the Google Cloud Platform (GCP) console and navigate to Cloud Run.
-7.	Click on "Create Service" to create a new service.
-8.	Select the option "Continuously deploy new revisions from a source repository".
-9.	Click on "Set Up With Cloud Build".
-10.	Choose GitHub as the source repository and select the repository that you have already added the service to.
-11.	Enable the option "Allow unauthenticated invocations" for public access to the endpoint.
-12.	Configure the port to 3000.
-13.	Click on "Create" to deploy the service.
-14.	Wait for the deployment to complete. You will be notified if the service is successfully deployed.
-15.	Any changes you make to the service in the GitHub repository will trigger an automatic rebuild in Cloud Run.
-16.	You can monitor the changes and build status of your service in Cloud Build.
-17.	Please note that these steps assume you have already set up your GCP account and have the necessary permissions to create and deploy services in Cloud Run.
 
